@@ -1,0 +1,20 @@
+library(data.table)
+library(dplyr)
+library(xgboost)
+library(lubridate)
+library(caret)
+library(ROSE)
+library(ggplot2)
+library(randomForest)
+library(rpart)
+library(data.table)
+library(e1071)
+library(gridExtra)
+
+setwd("D:/semicon")
+
+train = fread("train.csv")
+test = fread("test.csv")
+
+str(train)
+head(train)
